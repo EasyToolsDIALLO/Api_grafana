@@ -1,7 +1,9 @@
 # API_RESTFull
 API developped with mongoose, express and node js
 
-I do not put my personnal information to connect to my cluster because it is private. This is an example with show you how to create an api restfull and realize CRUD endpoints to you mongoDB Atlas cluster  
+I do not put my personnal information for connecting to my cluster. This is an example with show you how to create an api restfull and realize CRUD endpoints to you mongoDB Atlas cluster  
+
+## IMPORTANT: Establish a different request and a different model of mine if you use a different database  
 
 You have to only change the connection informations and follow the following instructions  
 
