@@ -13,7 +13,7 @@ app.listen(3000, () => {
 
 require('dotenv').config();
 
-const mongoString = process.env.DATABASE_URL
+const mongoString = "mongodb+srv://EasyTools:fulani1807@clusterforapi.9buuy.mongodb.net/Vente"
 mongoose.set('strictQuery', false);
 mongoose.connect(mongoString);
 
