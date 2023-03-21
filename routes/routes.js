@@ -10,6 +10,16 @@ module.exports = route;
 //5- Delete data by id
 
 
+//Obtenir un document par son id
+route.get('/', async (req,res)=>{
+    try{
+        res.send("Welcome to our plateform. Go enjoy api :)");
+    }catch(error){
+        res.send({message:error.message});
+    }
+});
+
+
 //Obtenir tous les documents de la collection
 route.get('/getAll', async (req,res)=>{
     try{
