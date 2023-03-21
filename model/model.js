@@ -1,37 +1,61 @@
 const mongoose = require('mongoose');
 const databaseSchema = new mongoose.Schema({
-    Date:{
+    Nom_client:{
         required: true,
         type: String
     },
-    Symbol:{
+    Segment:{
         required: true,
         type: String
     },
-    "Adj Close":{
+    Ville:{
+        required: true,
+        type: String
+    },
+    Region:{
+        required: true,
+        type: String
+    },
+    Pays:{
+        required: true,
+        type: String
+    },
+    Zone_geographique:{
+        required: true,
+        type: String
+    },
+    Categorie:{
+        required: true,
+        type: String
+    },
+    Sous_categorie:{
+        required: true,
+        type: String
+    },
+    Nom_produit:{
+        required: true,
+        type: String
+    },
+    Montant_ventes:{
         required: true,
         type: Number
     },
-    Close:{
+    Quantite:{
         required: true,
         type: Number
     },
-    High:{
+    Remise:{
         required: true,
         type: Number
     },
-    Low:{
+    Profit:{
         required: true,
         type: Number
     },
-    Open:{
-        required: true,
-        type: Number
-    },
-    Volume:{
+    Objectifs:{
         required: true,
         type: Number
     }
-})
+},{collection: 'europe'})
 
-module.exports = mongoose.model('Data',databaseSchema);
+module.exports = mongoose.model('europe',databaseSchema);
